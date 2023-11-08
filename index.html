@@ -8,18 +8,18 @@
   </head>
   <body>
     <div class="container">
-      <form action="submit" class="input-field">
+      <form id="input-form">
         <h1>To Do List</h1>
-        <input type="text" class="input-text" />
-        <input type="date" class="input-date" />
-        <select class="priority-options">
+        <input type="text" placeholder="Enter Task" id="task-input" />
+        <input type="date" id="date-input" />
+        <select id="priority-options">
           <option>Select Priority</option>
           <option value="High">High</option>
           <option value="Medium">Medium</option>
           <option value="Low">Low</option>
         </select>
         <button class="btn" onclick="addTask()">Add Task</button>
-        <ul class="task-list"></ul>
+        <ul id="task-list"></ul>
       </form>
     </div>
   </body>
